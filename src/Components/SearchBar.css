@@ -1,0 +1,30 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 300px;
+    transition: max-width 0.3s;
+  }
+  
+  .search-icon {
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+    width: 0;
+    transition: width 0.3s;
+  }
+  
+  .search-container.expanded {
+    max-width: 500px;
+  }
+  
+  .search-container.expanded .search-input {
+    width: 100%;
+  }

@@ -1,3 +1,10 @@
+:root {
+  --Black: #322625;
+  --Grey: #ebebeb;
+  --Blue: #c0e3e5;
+  --Yellow: #fdc936;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +42,83 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.table-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.user-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid var(--Black);
+}
+
+.user-table th,
+.user-table td {
+  color: var(--Black);
+  border: 1px solid var(--Black);
+  padding: 8px;
+  text-align: center;
+}
+
+.user-table th {
+  background-color: var(--Blue);
+}
+
+.user-table tr:nth-child(odd){
+  background-color: var(--Grey);
+}
+
+.css-qbdosj-Input{
+  font-size: 21px !important;
+  font-weight: bold !important;
+}
+.pagination {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.pagination button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.pagination button:disabled {
+  background-color: #ddd;
+  color: #555;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+form {
+  margin: 20px;
+}
+
+input {
+  padding-left: 25px;
+  width: 0;
+}
+
+i {
+  position: relative;
+  right: -25px;
+  z-index: 2;
 }
